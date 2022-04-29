@@ -24,7 +24,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0",
+    "react": "^16.0.0 || 17.0.1",
+    "react-dom": "^16.0.0 || 17.0.1",
     "prop-types": "^15.8.1"
   },
   "devDependencies": {
@@ -44,9 +45,6 @@
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-request": "^3.2.0",
     "react-scripts": "^3.4.1"
   },
   "files": [
