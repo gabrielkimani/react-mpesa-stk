@@ -97,7 +97,7 @@ if(shortcode === undefined || passkey === undefined || transactionType === undef
       props.onPayError({message:errorMessage})
     }
     return () => {
-      alert('unmounting')
+      
     }
   }, [data, error])
 
@@ -105,6 +105,9 @@ if(shortcode === undefined || passkey === undefined || transactionType === undef
     <div>
       {data.CustomerMessage ? (
         <div className={styles.success_wrapper}>
+          <div className={styles.success_header}>
+            Success!
+          </div>
           <p>Successful!{data.CustomerMessage}</p>
         </div>
       ) : (
@@ -131,7 +134,7 @@ if(shortcode === undefined || passkey === undefined || transactionType === undef
               />
             </span>
             <span className={styles.button}>
-              <button className={styles.button_wrapper} onClick={submitHandler}>
+              <button className={styles.button_wrapper} onClick={submitHandler} disabled={loading}>
                 <span className={styles.button_text}>
                   <img src={icon} alt='pay' className={styles.image} />
                 </span>
