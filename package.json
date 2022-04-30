@@ -1,6 +1,6 @@
 {
-  "name": "mpesa-react-button",
-  "version": "1.0.1",
+  "name": "mpesa-react-stk",
+  "version": "1.0.0",
   "description": "mpesa stk push button for c2b payments",
   "author": "gabrielkimani",
   "license": "MIT",
